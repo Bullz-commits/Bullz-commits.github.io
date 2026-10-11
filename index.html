@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bingo Dabber</title>
+<meta name="description" content="Scan your bingo tickets, call the numbers, and every card is dabbed at once. Free for Android.">
+<link rel="icon" href="icon.png">
+<style>
+:root{--bg:#0F1322;--paper:#181E33;--ink:#E8ECF7;--muted:#98A1BD;--line:#2C3550;--dab:#FF4F9A;--dab-ink:#1A0610}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:32px 20px 48px}
+header{display:flex;align-items:center;gap:14px}
+header img{width:56px;height:56px;border-radius:14px}
+header b{font-size:22px;font-weight:900}header b span{color:var(--dab)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;margin-top:36px}
+h1{font-size:clamp(32px,5vw,50px);line-height:1.08;margin:0 0 16px;font-weight:900;text-wrap:balance}
+h1 em{font-style:normal;color:var(--dab)}
+p.lead{color:var(--muted);font-size:19px;margin:0 0 24px;max-width:34em}
+.btn{display:inline-block;background:var(--dab);color:var(--dab-ink);font-weight:800;text-decoration:none;padding:14px 22px;border-radius:12px}
+.soon{display:block;color:var(--muted);font-size:14px;margin-top:10px}
+.shots{display:flex;gap:12px;justify-content:center}
+.shots img{width:32%;max-width:180px;border-radius:14px;border:1px solid var(--line)}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:48px}
+.feat div{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px}
+.feat h3{margin:0 0 6px;font-size:17px}.feat p{margin:0;color:var(--muted);font-size:15px}
+footer{margin-top:48px;border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:14px;display:flex;gap:18px;flex-wrap:wrap}
+footer a{color:var(--ink)}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.feat{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><img src="icon.png" alt=""><b>Bingo <span>Dabber</span></b></header>
+  <section class="hero">
+    <div>
+      <h1>Play every ticket at once. <em>Never miss a number.</em></h1>
+      <p class="lead">Photograph your paper bingo tickets, type each number as it's called, and Bingo Dabber dabs every card for you. It tells you when you're 1 to go and buzzes the moment you win.</p>
+      <a class="btn" id="play" href="https://play.google.com/store/apps/details?id=ie.james.bingodabber">Get it on Google Play</a>
+      <span class="soon">Free for Android. Coming soon to Google Play.</span>
+    </div>
+    <div class="shots">
+      <img src="shot-1.jpg" alt="Main screen with cards being dabbed">
+      <img src="shot-2.jpg" alt="Line win alert">
+      <img src="shot-3.jpg" alt="Full house on a card">
+    </div>
+  </section>
+  <section class="feat">
+    <div><h3>Scan whole strips</h3><p>Take a photo of a strip of 6 and every card is read on your phone. Any misread number is flagged before you play.</p></div>
+    <div><h3>Line, two lines, full house</h3><p>Cards closest to winning rise to the top, with exactly the numbers you're waiting for.</p></div>
+    <div><h3>Your ticket, on a win</h3><p>When a card wins, its photo pops up so you can find the right paper ticket in a hurry.</p></div>
+  </section>
+  <footer>
+    <span>Bingo Dabber is a helper for paper bingo. It isn't a gambling app.</span>
+    <a href="privacy/">Privacy policy</a>
+    <span>Contact: info.zbullz@gmail.com</span>
+  </footer>
+</div>
+</body>
+</html>
